@@ -1,0 +1,60 @@
+header {
+    /* background:lightblue; */
+    width:calc(100% - 60px);
+    height:100px;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:center;
+}
+header .left {}
+header .left h1 {
+    /* background: yellow; */
+    width:213px;
+}
+header .left h1 a {}
+header .left h1 a img {
+    width:100%;
+}
+/*-------------------------------------------right------------------------*/
+header .right {
+    /* background:pink; */
+    width:652px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+}
+header .right .lang {
+    font-size:20px;
+}
+/*-----------------------------search 양식 ----------------------------------*/
+header .right #searchFrm {}
+header .right #searchFrm fieldset {
+    background:white;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:5px 10px; 
+    border:1px solid black;
+    border-radius: 10px;
+}
+header .right #searchFrm fieldset #search {
+    color:#aaa;
+    font-size:16px;
+    background:none;
+}
+header .right #searchFrm fieldset .searchBtn {
+    background:none;
+    width:31px; height:31px;
+}
+header .right #searchFrm fieldset .searchBtn img {width:100%;}
+/*------------------------------------icon ------------------------------------*/
+header .right #login {width:42px; height:42px;}
+header .right #login img {width:100%;}
+header .right #cart {width:42px; height:42px;}
+header .right #cart img {width:100%;}
+header .right #menu {width:42px; height:42px;}
+header .right #menu img {width:100%; }
