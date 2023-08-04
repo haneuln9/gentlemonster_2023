@@ -42,4 +42,4 @@ const nav_adver = new Swiper('#nav_adver',{
         nextEl: '#nav_adver .swiper-button-next',
         prevEl: '#nav_adver .swiper-button-prev',
     }
-});
+})
