@@ -1,5 +1,5 @@
 header {
-    background:lightblue;
+    /* background:lightblue; */
     width:calc(100% - 60px);
     height:100px;
     margin:0 auto;
@@ -109,4 +109,90 @@ header #open_nav nav a::after {
     position:absolute; bottom:-3px; left:50%;
     transform:translateX(-50%) scaleX(0);
     transition:all 0.5s;
+}
+/*-----------------------------footer---------------------------------*/
+footer {
+    width:calc(100% -60px);
+    /* background:yellow; */
+}
+footer .f_menu {
+    /* background:pink; */
+    display:flex;
+    flex-flow:row nowrap;
+    margin: 0 auto;
+    padding:50px 0 0 90px;
+}
+footer .f_menu .service {
+    /* background:lightcoral; */
+    padding-bottom:20px;
+}
+footer .f_menu .service dt {
+    font-size: 1.333rem;
+    font-weight:600;
+    margin-bottom:30px;
+}
+footer .f_menu .service dd {
+
+}
+footer .f_menu .service dd a {
+    font-style: 1rem;
+    line-height: 30px;
+}
+
+footer .f_menu .law {
+    /* background:lightgray; */
+    padding-bottom:20px;
+    margin:0 180px;
+}
+footer .f_menu .law dt {
+    font-size: 1.333rem;
+    font-weight:600;
+    margin-bottom:30px;
+}
+footer .f_menu .law dd {
+    font-style: 1rem;
+    line-height: 30px;
+}
+footer .f_menu .law dd a {}
+
+footer .f_menu .sns {
+    /* background:lightblue; */
+    padding-bottom:20px;
+}
+footer .f_menu .sns dt {
+    font-size: 1.333rem;
+    font-weight:600;
+    margin-bottom:30px;
+}
+footer .f_menu .sns dd {
+    font-style: 1rem;
+    line-height: 30px;
+}
+footer .f_menu .sns dd a {}
+
+footer .f_copy {
+    /* background:lightgreen; */
+    padding:50px 0;
+    display:flex;
+    flex-flow:row nowrap;
+}
+footer .f_copy .logo {
+    /* background:lightsalmon; */
+    width:447px; height:85px;
+    margin:0 50px 100px 90px;
+    /* display:flex;
+    flex-flow:row nowrap;
+    align-items:center; */
+}
+footer .f_copy .logo img {
+    width:100%;
+    padding-top:10px;
+}
+footer .f_copy address {
+    /* background:lightyellow; */
+    line-height: 30px;
+    font-size:1rem;
+}
+footer .f_copy address a {
+    text-decoration:underline;
 }
