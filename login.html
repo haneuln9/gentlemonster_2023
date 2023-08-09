@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>LOGIN | GENTLEMONSTER</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+
+</head>
+<body>
+    <!--header-->
+    <main>
+        <div id="login">
+            <h1><a href="#"><img src="./images/logo.png" alt="#"></a></h1>
+            <div class="user_login">
+                <div id="tab_title">
+                    <a href="#" class="active">회원</a>
+                    <a href="#">비회원</a>
+                </div>
+                <div id="tab_contents">
+                    <!--회원-->
+                    <div class="tab_c1 active">
+                        <form action="#" method="post" class="tab_con1">
+                            <fieldset>
+                                <div class="user_id id">
+                                    <p><img src="./images/user.png" alt="idimg"></p>
+                                    <input type="text" id="id" placeholder="아이디">
+                                </div>
+                                <div class="user_pw pw">
+                                    <div class="pw_con">
+                                        <p><img src="./images/pw.png" alt="pwimg"></p>
+                                        <input type="password" id="pw" placeholder="비밀번호">
+                                    </div>
+                                    <div class="pw_show">
+                                        <button type="button" id="pw_on">비밀번호 표시</button>
+                                    </div>
+                                </div>
+                                <label>
+                                    <input type="checkbox" id="id_save">
+                                    <span>아이디 저장</span>
+                                </label>
+                                <div class="btn">
+                                    <button type="button" id="btn1">로그인</button>
+                                </div>
+                            </fieldset>
+                            <div class="login_option option"><!--로그인 옵션-->
+                                <a href="#">비밀번호 재설정</a>
+                                <span></span>
+                                <a href="#">회원가입</a>
+                                <span></span>
+                                <a href="#">아이디찾기</a>
+                            </div>
+                        </form><!--회원 form 끝-->
+                        <p><span><!--선 들어갈자리--></span></p>
+                        <div class="sns_login">
+                            <a href="#"><img src="./images/katalk_2.png" alt=""></a>
+                            <a href="#"><img src="./images/apple_2.png" alt=""></a>
+                        </div>
+                        <!-- <div class="phone_login">
+                            <h3><span>휴대폰번호</span>로 로그인</h3>
+                            <form action="#" method="post" class="p_login">
+                                <fieldset>
+                                    <select name="phone" id="num">
+                                        <option value="">010</option>
+                                        <option value="011">011</option>
+                                        <option value="017"></option>
+                                    </select>
+                                    <input type="text" maxlength="4" name="s_num">
+                                    <input type="text" maxlength="4" name="l_num">
+                                </fieldset>
+                            </form>
+                        </div> -->
+                    </div>
+                    <!--비회원-->
+                    <div class="tab_c2">
+                        <form action="#" method="post" class="tab_con2">
+                            <fieldset>
+                                <div class="name id">
+                                    <p><img src="./images/user.png" alt="idimg"></p>
+                                    <input type="text" id="name" placeholder="주문자 이름">
+                                </div>
+                                <div class="user_phone">
+                                    <p><img src="./images/phone.png" alt="phone"></p>
+                                    <input type="text" id="phone" placeholder="휴대폰 번호">
+                                </div>
+                                <div class="user_pw pw">
+                                    <div class="pw_con">
+                                        <p><img src="./images/pw.png" alt="pwimg"></p>
+                                        <input type="text" id="order" placeholder="주문 비밀번호">
+                                    </div>
+                                    <div class="pw_show">
+                                        <button type="button" id="order_on">주문 비밀번호 표시</button>
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <button type="button" id="btn2">주문 내역 조회</button>
+                                </div>
+                            </fieldset>
+                            <div class="pw_option option">
+                                <a href="#">주문 비밀번호를 잊으셨나요?</a>
+                            </div>
+                        </form><!--비회원 form 끝-->
+                        <p><span><!--선 들어갈자리--></span></p>
+                        <div class="easy_login">
+                            <p>아직 회원이 아니시라면</p>
+                            <div class="easy_btn">
+                                <button type="button" class="e_btn">
+                                    간편가입하고 쇼핑하기<img src="./images/adver_next.png" alt=">">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <script>
+        //변수
+        const tabTitle = document.querySelectorAll ('#login #tab_title a')
+        const tabContents = document.querySelectorAll ('#login #tab_contents > div')
+        console.log(tabContents, tabTitle)//확인
+        //----------------------
+        //초기 안보이게하기
+        tabContents[1].style.display = 'none'
+        //---
+        tabTitle.forEach(function(t, i, a){
+            t.addEventListener('click',function(e){
+                e.preventDefault()
+                for(let i of tabTitle)[i.classList.remove('active')]
+                t.classList.add('active')
+                for(let i of tabContents){i.style.display='none'}
+                tabContents[i].style.display = 'block'
+            })
+        })
+    </script>
+</body>
+</html>

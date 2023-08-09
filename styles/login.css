@@ -1,0 +1,318 @@
+main {}
+main #login {
+    /* background:lightblue; */
+}
+main #login h1 {
+    /* background:lightgoldenrodyellow; */
+    width:440px; height:72px; margin:0 auto;
+    display:flex;
+    align-items:center;
+    padding:434px 0 134px 0;
+}
+main #login h1 a {}
+main #login h1 a img {width:100%;}
+/*-------------------------------------------logo-------------------------*/
+/*------------------------------------user_login--------------------------------*/
+main #login .user_login {}
+main #login .user_login #tab_title {
+    /* background:lightgreen; */
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    text-align:center;
+}
+main #login .user_login #tab_title a {
+    /* background:lightcoral; */
+    display:block;
+    width:457px;
+    font-size:2.369rem;
+    font-weight:700;
+    padding:40px 0;
+    border-radius:20px 20px 0 0;
+    border:1px solid black;
+}
+main #login .user_login #tab_title .active {
+    color:#fff;
+    background:#464646;
+    border:none;
+}
+/*-------------------------------------tab_contents------------------------------*/
+main #login .user_login #tab_contents {
+    
+}
+/*------------------------------------tab_c1---------------------------------*/
+main #login .user_login #tab_contents .tab_c1 {
+    /* background:lightpink; */
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 {}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset {
+    width:914px; margin:0 auto;
+    display:flex;
+    flex-flow:column nowrap;
+}
+/*--------------------------------------------id--------------------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_id {
+    /* background:yellow; */
+    width:914px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    padding:40px 30px 40px 30px;
+    border:1px solid black;
+    border-top:none;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_id p {
+    width:27px; height:27px;
+    margin-right:20px;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_id p img {
+    width:100%;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_id #id {
+    font-size:2.369rem;
+    background:none;
+}
+/*---------------------------------------------------pw-----------------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw {
+    /* background:lightsteelblue;  */
+    width:914px; margin:0 auto;
+    padding:40px 30px 40px 30px;
+    border-radius:0 0 20px 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    border:1px solid black;
+    border-top:none;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw .pw_con {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw .pw_con p {
+    width:27px; height:27px;
+    margin-right:20px;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw .pw_con p img {
+    width:100%;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw .pw_con #pw {
+    font-size:2.369rem;
+    background:none;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw .pw_show {}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .user_pw .pw_show #pw_on {
+    font-size: 1.333rem;
+    background:none;
+    text-decoration:underline;
+}
+/*------------------------------------------------- id 저장 ----------------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label {
+    /* background:lightgreen; */
+    display:flex;
+    justify-content:flex-start;
+    margin:46px 0 39px;
+    padding-left:30px;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label #id_save {}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label span {
+    padding-left:20px;
+    font-size:1.333rem;
+}
+/*------------------------------------------------  로그인 -----------------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .btn {}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .btn #btn1 {
+    width:914px;
+    color:#fff;
+    background:#464646;
+    padding:40px 30px 40px 30px;
+    border-radius:20px;
+    font-size:2.369rem;
+}
+/*------------------------------------------------로그인 옵션--------------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 .login_option {
+    /* background:orange; */
+    padding:30px 0 60px 0;
+    width:400px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 .login_option a {
+    font-size: 1.333rem;
+    text-decoration:underline;
+}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 .login_option span{
+    width:1px; height:20px; 
+    display:block;
+    background:black;
+}
+/*-----------------------------------------------------선--------------------------------------*/
+main #login .user_login #tab_contents .tab_c1 p {}
+main #login .user_login #tab_contents .tab_c1 p span {
+    display:block; margin:0 auto;
+    background:black;
+    width:914px; height:1px;
+}
+/*-----------------------------------------------sns--------------------------------------------------*/
+main #login .user_login #tab_contents .tab_c1 .sns_login {
+    width:250px; margin:0 auto;
+    padding-top:70px;
+    display:flex;
+    justify-content:space-between;
+}
+main #login .user_login #tab_contents .tab_c1 .sns_login a {}
+/* main #login .user_login #tab_contents .tab_c1 .sns_login a:nth-child(2) {margin-left:50px;} */
+
+main #login .user_login #tab_contents .tab_c1 .sns_login a  img {width:100px; height:100px;}
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*---------------------------------------tab_c2----------------------------------------------------*/
+main #login .user_login #tab_contents .tab_c2 {
+    /* background:lightpink; */
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 {}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset {
+    width:914px; margin:0 auto;
+    display:flex;
+    flex-flow:column nowrap;
+}
+/*-----------------------------------------주문자 이름-------------------------------*/
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .name {
+    /* background:yellow; */
+    width:914px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    padding:40px 30px 40px 30px;
+    border:1px solid black;
+    border-top:none;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .name p {
+    width:27px; height:27px;
+    margin-right:20px;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .name p img {
+    width:100%;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .name #name {
+    font-size:2.369rem;
+    background:none;
+}
+/*----------------------------------------phone-------------------------------------*/
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_phone {
+    /* background:lightcoral; */
+    width:914px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    padding:40px 30px 40px 30px;
+    border:1px solid black;
+    border-top:none;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_phone p {
+    width:27px; height:27px;
+    margin-right:20px;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_phone p img {
+    width:100%;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_phone #phone {
+    font-size:2.369rem;
+    background:none;
+}
+/*------------------------------------------주문 비밀번호-------------------------------*/
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw {
+    /* background:lightsteelblue;  */
+    width:914px; margin:0 auto;
+    padding:40px 30px 40px 30px;
+    border-radius:0 0 20px 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    border:1px solid black;
+    border-top:none;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw .pw_con {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw .pw_con p {
+    width:27px; height:27px;
+    margin-right:20px;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw .pw_con p img {
+    width:100%;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw .pw_con #order {
+    font-size:2.369rem;
+    background:none;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw .pw_show {}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .user_pw .pw_show #order_on {
+    font-size: 1.333rem;
+    background:none;
+    text-decoration:underline;
+}
+/*---------------------------------------------주문 내역 조회(로그인)------------------------*/
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .btn {
+    padding-top:43px;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .btn #btn2 {
+    width:914px;
+    color:#fff;
+    background:#464646;
+    padding:40px 30px 40px 30px;
+    border-radius:20px;
+    font-size:2.369rem;
+}
+/*----------------------------------주문 비밀 번호 잊으셨나요?-----------------------------*/
+main #login .user_login #tab_contents .tab_c2 .tab_con2 .pw_option {
+    padding:32px 0 60px 0;
+    display:flex;
+    justify-content:center;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 .pw_option a {
+    font-size: 1.333rem;
+    text-decoration:underline;
+}
+/*-------------------------------------선 --------------------------------------------*/
+main #login .user_login #tab_contents .tab_c2 p {}
+main #login .user_login #tab_contents .tab_c2 p span {
+    display:block; margin:0 auto;
+    background:black;
+    width:914px; height:1px;
+}
+/*--------------------------------------회원이 아니시라면---------------------------------*/
+main #login .user_login #tab_contents .tab_c2 .easy_login {
+    /* background:orange; */
+    text-align:center;
+}
+main #login .user_login #tab_contents .tab_c2 .easy_login p {
+    font-size: 1.333rem;
+    text-decoration:underline;
+    padding:70px 0 43px 0;
+}
+
+/*--------------------------------------------간편 가입 쇼핑 버튼-------------------------*/
+main #login .user_login #tab_contents .tab_c2 .easy_login .easy_btn {
+    padding-bottom:50px;
+}
+main #login .user_login #tab_contents .tab_c2 .easy_login .easy_btn .e_btn { 
+    color:black;
+    background:#aaa;
+    padding:30px 20px;
+    border-radius:40px;
+    font-size:1.777rem;
+}
+main #login .user_login #tab_contents .tab_c2 .easy_login .easy_btn .e_btn img {
+    width:21PX;height:21px;
+    margin-left:20px;
+}
+
+
+
+
