@@ -7,7 +7,7 @@ main #login h1 {
     width:440px; height:72px; margin:0 auto;
     display:flex;
     align-items:center;
-    padding:434px 0 134px 0;
+    padding:234px 0 134px 0;
 }
 main #login h1 a {}
 main #login h1 a img {width:100%;}
@@ -35,6 +35,9 @@ main #login .user_login #tab_title .active {
     color:#fff;
     background:#464646;
     border:none;
+}
+main #login .user_login #tab_title a:hover {
+    /* background:#464646; */
 }
 /*-------------------------------------tab_contents------------------------------*/
 main #login .user_login #tab_contents {
@@ -152,7 +155,7 @@ main #login .user_login #tab_contents .tab_c1 .tab_con1 .login_option span{
 main #login .user_login #tab_contents .tab_c1 p {}
 main #login .user_login #tab_contents .tab_c1 p span {
     display:block; margin:0 auto;
-    background:black;
+    background:#222;
     width:914px; height:1px;
 }
 /*-----------------------------------------------sns--------------------------------------------------*/
@@ -161,6 +164,7 @@ main #login .user_login #tab_contents .tab_c1 .sns_login {
     padding-top:70px;
     display:flex;
     justify-content:space-between;
+    padding-bottom:70px;
 }
 main #login .user_login #tab_contents .tab_c1 .sns_login a {}
 /* main #login .user_login #tab_contents .tab_c1 .sns_login a:nth-child(2) {margin-left:50px;} */
@@ -283,7 +287,7 @@ main #login .user_login #tab_contents .tab_c2 .tab_con2 .pw_option a {
 main #login .user_login #tab_contents .tab_c2 p {}
 main #login .user_login #tab_contents .tab_c2 p span {
     display:block; margin:0 auto;
-    background:black;
+    background:#222;
     width:914px; height:1px;
 }
 /*--------------------------------------회원이 아니시라면---------------------------------*/
@@ -312,7 +316,16 @@ main #login .user_login #tab_contents .tab_c2 .easy_login .easy_btn .e_btn img {
     width:21PX;height:21px;
     margin-left:20px;
 }
-
-
-
-
+/*------------------------------------버튼 hover---------------------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .btn #btn1:hover {
+    background: #aaa;
+    color:#222;
+}
+main #login .user_login #tab_contents .tab_c2 .tab_con2 fieldset .btn #btn2:hover {
+    background: #aaa;
+    color:#222;
+}
+main #login .user_login #tab_contents .tab_c2 .easy_login .easy_btn .e_btn:hover {
+    background:#222;
+    color:#fff;
+}

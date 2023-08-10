@@ -6,16 +6,20 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>LOGIN | GENTLEMONSTER</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!---->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
-
 </head>
 <body>
     <!--header-->
+    <?php include ('./header.php') ?>
     <main>
         <div id="login">
-            <h1><a href="#"><img src="./images/logo.png" alt="#"></a></h1>
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="#"></a></h1>
             <div class="user_login">
                 <div id="tab_title">
                     <a href="#" class="active">회원</a>
@@ -60,20 +64,6 @@
                             <a href="#"><img src="./images/katalk_2.png" alt=""></a>
                             <a href="#"><img src="./images/apple_2.png" alt=""></a>
                         </div>
-                        <!-- <div class="phone_login">
-                            <h3><span>휴대폰번호</span>로 로그인</h3>
-                            <form action="#" method="post" class="p_login">
-                                <fieldset>
-                                    <select name="phone" id="num">
-                                        <option value="">010</option>
-                                        <option value="011">011</option>
-                                        <option value="017"></option>
-                                    </select>
-                                    <input type="text" maxlength="4" name="s_num">
-                                    <input type="text" maxlength="4" name="l_num">
-                                </fieldset>
-                            </form>
-                        </div> -->
                     </div>
                     <!--비회원-->
                     <div class="tab_c2">
@@ -90,7 +80,7 @@
                                 <div class="user_pw pw">
                                     <div class="pw_con">
                                         <p><img src="./images/pw.png" alt="pwimg"></p>
-                                        <input type="text" id="order" placeholder="주문 비밀번호">
+                                        <input type="password" id="order" placeholder="주문 비밀번호">
                                     </div>
                                     <div class="pw_show">
                                         <button type="button" id="order_on">주문 비밀번호 표시</button>
@@ -137,6 +127,12 @@
                 tabContents[i].style.display = 'block'
             })
         })
+        //----------------------------------------------------
     </script>
+    <!--footer-->
+    <?php include ('./footer.php') ?>
+    <!--header, footer 웹페이지 공통 영역 적용  js -->
+    <script src="./script/common.js"></script>
 </body>
+
 </html>
