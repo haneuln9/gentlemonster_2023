@@ -1,0 +1,181 @@
+/*-----------------------------------1. swiper-slide-----------------------------*/
+
+
+
+/*------------------------------------end----------------------------------------*/
+/*-----------------------------------2. category---------------------------------*/
+main #category {
+    /* background:lightblue; */
+    width:1350px; margin:0 auto;
+    padding:60px 0;
+}
+main #category ul {
+    /* background:lightcoral; */
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main #category ul li {
+    /* background:lightgoldenrodyellow; */
+    width:170px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    text-align: center;
+    margin-right:10px;
+}
+main #category ul li:last-child {margin-right:0;}
+main #category ul li a {
+    
+    border-radius: 80px;
+}
+main #category ul li a span {
+    font-size:1.3rem;
+    font-weight:600;
+}
+main #category ul li a img {
+    margin-bottom:10px;
+}
+/*-------------------------------- category hover---------------------------------*/
+main #category ul li a img:hover {
+    /* filter:drop-shadow( 0 4px 3px rgba(0, 0, 0, 0.4)); */
+    filter:brightness(80%);
+}
+main #category ul li a:hover {
+    color:#aaa;
+
+}
+/*-----------------------------------3. product_list-----------------------------*/
+/*------------------------------------title-top------------------------------------*/
+main #product_list {
+    width:1380px; margin:0 auto;
+}
+main #product_list .title {}
+main #product_list .title .title_top {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main #product_list .title .title_top h2 {
+    font-size:2.369rem;
+    font-weight:700;
+}
+main #product_list .title .title_top .right {
+    display:flex;
+    align-items:center;
+}
+main #product_list .title .title_top .right p {
+    margin-right:25px;
+
+}
+main #product_list .title .title_top .right p:last-child {margin-right:0px;}
+main #product_list .title .title_top .right p a {
+    font-size:1.333rem;
+    font-weight:500;
+}
+main #product_list .title .title_top .right p a:hover {
+    color:#aaa;
+}
+/*-----------------------------선---------------------*/
+main #product_list .title span {
+    display:block;
+    background:black;
+    width:1380px; height:1px;
+    margin:20px 0;
+}
+/*------------------------------------title-bt------------------------------------*/
+main #product_list .title .title_bt {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    margin-bottom:60px ;
+}
+main #product_list .title .title_bt p {
+    font-size:1.333rem;
+}
+main #product_list .title .title_bt #contents_size {
+    font-size:1.333rem;
+    font-weight:500;
+    background:none;
+    border:none;
+}
+main #product_list .title .title_bt #contents_size:hover{
+    color:#aaa;
+}
+main #product_list .title .title_bt #contents_size option {
+    color:#000;
+}
+/*------------------------------------container------------------------------------*/
+/*-----------------------------------아이템 상부------------------------------------*/
+main #product_list .container {
+    display:flex;
+    justify-content:space-between;
+}
+main #product_list .container .item {}
+main #product_list .container .item .i_top {
+    position: relative;
+}
+main #product_list .container .item .i_top .item_img {}
+main #product_list .container .item .i_top .item_img img {
+    width:268px; height:320px;
+}
+main #product_list .container .item .i_top .like_img {
+    position: absolute;
+    top:10px; right:10px;
+}
+main #product_list .container .item .i_top .like_img img {width:20px;height:20px;}
+/*-----------------------------------아이템 상부 hover-------------------------------*/
+main #product_list .container .item .i_top .like_img img:hover {
+}
+main #product_list .container .item1 .i_top:nth-child(1):hover {}
+main #product_list .container .item2 .i_top .item_img img:hover {}
+main #product_list .container .item3 .i_top .item_img img:hover {}
+main #product_list .container .item4 .i_top .item_img img:hover {}
+main #product_list .container .item5 .i_top .item_img img:hover {}
+/*-----------------------------------아이템 하부------------------------------------*/
+main #product_list .container .item .i_bt {}
+main #product_list .container .item .i_bt h2 {
+    font-size:1rem;
+    margin-top:10px;
+}
+main #product_list .container .item .i_bt .name {
+    font-size:1.333rem;
+    font-weight:500;
+    margin:10px 0;
+}
+main #product_list .container .item .i_bt .price {
+    font-size:1.333rem;
+}
+/*--------------------------------아이템 색상---------------------------------------*/
+main #product_list .container .item .i_bt .color {
+    display: flex;
+}
+main #product_list .container .item .i_bt .color span {
+    margin:10px 10px 50px 0 ;
+    display:block;
+    border-radius:80px;
+    width:20px;height:20px;
+}
+/*---------------------------------아이템 1 ----------------------------------------*/
+main #product_list .container .item1 .i_bt .color .black {background: #000;}
+main #product_list .container .item1 .i_bt .color .gray {background: #aaa;}
+main #product_list .container .item1 .i_bt .color .yellow {background:#cbb852;}
+/*---------------------------------아이템 2 ----------------------------------------*/
+main #product_list .container .item2 .i_bt .color .blue {background:#4c55aa;}
+main #product_list .container .item2 .i_bt .color .red {background: #ff5555;}
+main #product_list .container .item2 .i_bt .color .black {background: #000;}
+main #product_list .container .item2 .i_bt .color .gray {background: #aaa;}
+/*---------------------------------아이템 3 ----------------------------------------*/
+main #product_list .container .item3 .i_bt .color .black {background: #000;}
+main #product_list .container .item3 .i_bt .color .yellow {background:#cbb852;}
+main #product_list .container .item3 .i_bt .color .orange {background:#f87f59;}
+main #product_list .container .item3 .i_bt .color .white {background: #fff;border: 1px solid;}
+main #product_list .container .item3 .i_bt .color .gray {background: #aaa;}
+/*---------------------------------아이템 4 ----------------------------------------*/
+main #product_list .container .item4 .i_bt .color .gray {background: #aaa;}
+main #product_list .container .item4 .i_bt .color .white {background: #fff;border: 1px solid;}
+main #product_list .container .item4 .i_bt .color .black {background: #000;}
+/*---------------------------------아이템 5 ----------------------------------------*/
+main #product_list .container .item5 .i_bt .color .gray {background: #aaa;}
+main #product_list .container .item5 .i_bt .color .yellow {background:#f9d454;}
+main #product_list .container .item5 .i_bt .color .blue {background: #5c73ae;}

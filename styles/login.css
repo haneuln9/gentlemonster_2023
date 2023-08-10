@@ -122,7 +122,11 @@ main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label #id_save 
 main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label span {
     padding-left:20px;
     font-size:1.333rem;
+
 }
+/*-----------------------체크박스 이미지 변경------------------*/
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label input{}
+main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset label input:checked+span{}
 /*------------------------------------------------  로그인 -----------------------------*/
 main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .btn {}
 main #login .user_login #tab_contents .tab_c1 .tab_con1 fieldset .btn #btn1 {
