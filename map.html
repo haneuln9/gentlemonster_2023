@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>매장소개 | 젠틀몬스터</title>
+    <!--스와이퍼 슬라이드-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/map.css">
+</head>
+<body>
+    <!--php 는 local 확인 불가 , ftp 업로드 후 web 확인가능-->
+    <!--header-->
+    <?php include("./header.php") ?>
+    <main>
+        <div id="map"><!--지도 삽입 위치--></div>
+    </main>
+    <!--footer-->
+    <?php include("./footer.php") ?>
+    <script src="./script/common.js"></script>
+    <!--카카오 지도를 사용하기 위한 js 앱키 준비-->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=002d1f95f81908257c6b77f3e0c20231"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.49312961,126.7226745);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.49312961,126.7226745), //지도의 중심좌표.(위도 경도 수정)
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+</body>
+</html>

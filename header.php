@@ -38,11 +38,11 @@
             <!-- 내비게이션 -->
             <nav>
                 <a href="#">선글라스</a>
-                <a href="#">안경</a>
+                <a href="./product_list.html">안경</a>
                 <a href="#">콜라보레이션</a>
                 <a href="#">스타일</a>
                 <a href="#">브랜드이슈</a>
-                <a href="#">매장보기</a>
+                <a href="./map.html">매장보기</a>
                 <a href="#">수리서비스</a>
             </nav>
         </div>
